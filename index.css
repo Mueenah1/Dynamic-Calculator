@@ -1,0 +1,107 @@
+*{
+    margin: 0 auto 0 auto;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+
+#calculator{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 370px;
+    height: 620px;
+    background: #FF869E;
+    margin-top: 1em;
+    border-radius: 30px;
+    box-shadow: 5px 5px 0px 8px #A10035, 5px 5px 18px 8px #FFC4C4 ;
+    padding: 25px 0 5px 0;
+    margin-bottom: 5em;
+}
+
+#displayArea{
+    width: 90%;
+    height: 150px;
+    border: 3px #A10035 solid;
+    border-radius: 15px;
+    background-color: aliceblue;
+}
+#history, #input{
+    height: 50%;
+    background-color: aliceblue;
+    width: 100%;
+    padding: 15px;
+    text-align: right;
+    font-size: 22px;
+}
+#input{
+    border-top: 1px solid #e6e3e3;
+    font-size: 30px;
+}
+#buttonArea{
+    width: 90%;
+    height: 430px;
+    background-color:  #b7154b;
+    padding: 10px 20px 0px 5px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 15px;
+    margin-bottom: 10px;
+}
+
+.line{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    gap: 15px;
+    margin: 0 10px;
+}
+
+.button{
+    width: 20%;
+    height: 90%;
+    background-color: #EE6983;
+    box-shadow: 1px 0px 4px 2px #A10035, 0px 2px 2px 2px rgb(21, 52, 52);
+    box-sizing: border-box;
+    border-radius: 20px;
+    color: aliceblue;
+    margin-top: 2px;
+    border-top: 20px solid #FFC4C4;
+    border-top-left-radius: 250%;
+    border-top-right-radius: 250%;
+    border-bottom-right-radius: 180%;
+    border-bottom-left-radius: 180%;
+    
+}
+
+p{
+    width: 100%;
+    font-size: 16px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 10px 13px 13px 13px;
+    font-weight: bold;
+    height: 100%;
+}
+.operator{
+    color: #820000;
+}
+.operator:active{
+    background-color: #FFC4C4;
+}
+#clear:active{
+    background-color: #642a2a;
+    color: #EE6983;
+}
+.number{
+    color: #a4125b;
+}
+.number:active{
+    background-color: #FF8C8C;
+}
+
+.button:active{
+    border-top: 15px solid #ea0f67;
+}
